@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/JavaEE/bak_projekt/web/js/main.js</file>
+            <file>file:/E:/JavaEE/bak_projekt/src/java/bean/ValidateInput.java</file>
+            <file>file:/E:/JavaEE/bak_projekt/src/java/bean/DBConnection.java</file>
+            <file>file:/E:/JavaEE/bak_projekt/src/java/bean/SessionUtils.java</file>
+            <file>file:/E:/JavaEE/bak_projekt/web/login.xhtml</file>
+            <file>file:/E:/JavaEE/bak_projekt/web/js/adminjs.js</file>
+            <file>file:/E:/JavaEE/bak_projekt/web/vendor/jquery/jquery-3.2.1.min.js</file>
+            <file>file:/E:/JavaEE/bak_projekt/src/java/bean/AuthorizationFilter.java</file>
+            <file>file:/E:/JavaEE/bak_projekt/web/admin.xhtml</file>
+            <file>file:/E:/JavaEE/bak_projekt/src/java/bean/User.java</file>
+            <file>file:/E:/JavaEE/bak_projekt/web/WEB-INF/faces-config.xml</file>
+            <file>file:/E:/JavaEE/bak_projekt/src/java/bean/Admin_page.java</file>
+            <file>file:/E:/JavaEE/bak_projekt/web/WEB-INF/web.xml</file>
+            <file>file:/E:/JavaEE/bak_projekt/web/css/main.css</file>
+            <file>file:/E:/JavaEE/bak_projekt/src/java/bean/LoginDB.java</file>
+            <file>file:/E:/JavaEE/bak_projekt/web/vendor/perfect-scrollbar/perfect-scrollbar.css</file>
+            <file>file:/E:/JavaEE/bak_projekt/src/java/bean/Login.java</file>
+            <file>file:/E:/JavaEE/bak_projekt/web/create_user.xhtml</file>
+        </group>
+    </open-files>
+</project-private>

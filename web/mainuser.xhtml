@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<title>Create User</title>
+        <link rel="stylesheet" type="text/css" href="css/util.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/main.css"></link>
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css"></link>
+         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+ <!--===============================================================================================-->	
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico"></link>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"></link>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"></link>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css"></link>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css"></link>
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css"></link>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css"></link>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css"></link>
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css"></link>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/main.css"></link>
+<!--===============================================================================================-->
+</h:head>
+<h:body>
+     
+        <h:form>
+        <p:menubar styleClass="topnav">
+        <p:menuitem value="Dashboard" url="mainuser.xhtml" icon="fa fa-home" />
+        <f:facet name="options">
+        <p:commandButton type="submit" value="Sign out" action="#{logincontroller.logout}" styleClass="signout_button" icon="fa fa-sign-out"/>
+        </f:facet>
+        </p:menubar>
+        </h:form>
+       
+        <div class="sidenav">
+          
+          <h:form>
+            <img src="images/profiles/#{loggeduser.profile_pic}" alt="Profile Pic"></img>
+            <p>Hi <b><h:outputText value="#{loggeduser.l_name}" /></b></p>
+	  </h:form>  
+        </div>
+        <div class="box">
+      
+        </div>     
+ </h:body>
+</html>

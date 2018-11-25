@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<title>TaskManager</title>
+        <meta charset="UTF-8"></meta>
+            <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/main.css"></link>
+<!--===============================================================================================-->
+</h:head>
+<h:body>
+<div class="outer">
+  <div class="middle">
+    <div class="inner">       
+      <h:form >
+       <div class="container">
+       <center><h1>Report System</h1></center>
+       <label for="uname"><b>Username</b></label>
+       <a><h:inputText class="input_name" value="#{login.user}"></h:inputText></a>
+       <label for="psw"><b>Password</b></label>
+       <a><h:inputSecret class="input_pass" value="#{login.pwd}"></h:inputSecret></a> 
+       <center><div class="loginbutton"><h:commandButton class="loginbutton"  value="Login" action="#{logincontroller.loginProcess()}">
+       </h:commandButton></div></center>
+       </div>
+      </h:form>
+    </div>
+  </div>
+</div>
+</h:body>
+</html>
