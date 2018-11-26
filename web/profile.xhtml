@@ -35,25 +35,50 @@
 <!--===============================================================================================-->
 </h:head>
 <h:body>
-     
-        <h:form>
-        <p:menubar styleClass="topnav">
-        <p:menuitem value="Dashboard" url="admin.xhtml" icon="fa fa-home" />
-        <p:menuitem value="Create user" url="create_user.xhtml" icon="fa fa-user-plus" />
-        <f:facet name="options">
-        <p:commandButton type="submit" value="Sign out" action="#{logincontroller.logout}" styleClass="signout_button" icon="fa fa-sign-out"/>
-        </f:facet>
-        </p:menubar>
-        </h:form>
+   
+     <div class="topnav">
+         <h:form>
+         <p:menubar styleClass="topnav">
+         <p:menuitem value="Dashboard" url="admin.xhtml" icon="fa fa-home" />
+         <p:menuitem value="Create user" url="create_user.xhtml" icon="fa fa-user-plus" />
+         <f:facet name="options">
+         <p:commandButton type="submit" value="Sign out" action="#{logincontroller.logout}" styleClass="signout_button" icon="fa fa-sign-out"/>
+         </f:facet>
+         </p:menubar>
+         </h:form>
+       </div>
+      
        
-      <div class="sidenav">
-          <div class="profilebox">
-              <a href="profile.xhtml"><img src="images/profiles/#{loggeduser.profile_pic}" alt="Profile"></img></a>
-          <p>Hi <b><h:outputText value="#{loggeduser.l_name}" /></b></p>
-          </div>
-      </div>
-      <div class="box">
-      </div>
-       
- </h:body>
+<div class="sidenav">
+  <div class="profilebox">
+    <a href="profile.xhtml"><img src="images/profiles/#{loggeduser.profile_pic}" alt="Profile"></img></a>
+    <p>Hi <b><h:outputText value="#{loggeduser.l_name}" /></b></p>
+  </div>
+</div>
+<div class="box">
+   <h:form id="form">  
+       <p:panel styleClass="panel" id="panel" header="Profile" style="margin-bottom:10px;">
+        
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:outputText  value="Name" ></h:outputText>
+            <h:outputText id="text1" style="font-weight:bold" value="#{loggeduser.l_name}"> 
+            </h:outputText>
+            <p:outputLabel for="text2" value="Surname:" />
+            <h:outputText id="text2" style="font-weight:bold" value="#{loggeduser.l_surname}"> 
+            </h:outputText>
+            <p:outputLabel for="text3" value="Username:" />
+            <h:outputText id="text3" style="font-weight:bold" value="#{loggeduser.l_username}"> 
+            </h:outputText>
+            <p:outputLabel for="text4" value="Email:" />
+            <h:outputText id="text4" style="font-weight:bold" value="#{loggeduser.l_email}"> 
+            </h:outputText>
+            <p:outputLabel for="text5" value="Pict.:" />
+            <h:outputText id="text5" style="font-weight:bold" value="#{loggeduser.profile_pic}"> 
+            </h:outputText>
+        </h:panelGrid>    
+        
+    </p:panel>
+   </h:form>                  
+ </div>
+</h:body>
 </html>

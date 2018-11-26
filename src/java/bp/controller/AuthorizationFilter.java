@@ -37,7 +37,7 @@ public class AuthorizationFilter implements Filter {
 			HttpServletRequest reqt = (HttpServletRequest) request;
 			HttpServletResponse resp = (HttpServletResponse) response;
 			HttpSession ses = reqt.getSession(false);
-
+                        
 			String reqURI = reqt.getRequestURI();
 			
                       //Not finished yet

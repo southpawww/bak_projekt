@@ -46,16 +46,14 @@
         </p:menubar>
         </h:form>
        
-        <div class="sidenav">
-          
-          <h:form>
-            <img src="images/profiles/#{loggeduser.profile_pic}" alt="Profile Pic"></img>
-            <p>Hi <b><h:outputText value="#{loggeduser.l_name}" /></b></p>
-	  </h:form>  
-        </div>
-        <div class="box">
-      
-        </div>
+      <div class="sidenav">
+          <div class="profilebox">
+              <a href="profile.xhtml"><img src="images/profiles/#{loggeduser.profile_pic}" alt="Profile"></img></a>
+          <p>Hi <b><h:outputText value="#{loggeduser.l_name}" /></b></p>
+          </div>
+      </div>
+      <div class="box">
+      </div>
        
  </h:body>
 </html>
